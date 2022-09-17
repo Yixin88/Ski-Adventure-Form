@@ -34,14 +34,14 @@ label {
                          "email password "
                          "age age";
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 15px 20px;
 }
 
 .basicInfoInput, select {
     height: 35px;
 }
 
-.top h3 {
+.top h2 {
     margin-bottom: 30px;
 }
 
@@ -87,6 +87,16 @@ textarea {
     margin-top: 5px;
 }
 
+h5 {
+    visibility: hidden;
+    margin: 0;
+    padding-top: 8px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
 input, select {
     background-color: #E2E5ED;
     border: 1px solid #E2E5ED;
@@ -101,13 +111,18 @@ input:hover, textarea:hover {
 
 input[type = "email"]:not(:placeholder-shown):invalid, 
 input[type = "password"]:not(:placeholder-shown):invalid {
-    border-color: hsl(0, 76%, 50%);;
+    border-color: hsl(0, 76%, 50%);
 }
 
 input[type = "email"]:not(:placeholder-shown):valid, 
 input[type = "password"]:not(:placeholder-shown):valid, 
 input[type = "text"]:not(:placeholder-shown):valid {
     border-color: hsl(120, 76%, 50%);
+}
+
+input:placeholder-shown + h5 {
+    color: red;
+    visibility: visible;
 }
 
 input::-webkit-input-placeholder {
@@ -148,7 +163,11 @@ input::-webkit-input-placeholder {
 .bottom {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
+}
+
+.bottom h2 {
+    margin-bottom: 0px;
 }
 
 .buttons {
@@ -217,4 +236,9 @@ input::-webkit-input-placeholder {
     color: #FFFFFF;
     padding: 0 20px;
     text-shadow: 1px 1px 0px #716e6e;
+}
+
+.required::after {
+    content: " *";
+    color: red;
 }

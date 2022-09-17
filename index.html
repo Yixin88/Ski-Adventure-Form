@@ -11,33 +11,36 @@
     <form action="" method="get" class="leftPage">
         <h1>Register for the ultimate ski adventure</h1>
         <section class="top">
-            <h3>Your basic info</h3>
+            <h2>Your basic info</h2>
             <div class="basicInfoField">
                 <div class="fullnameField">
-                    <label for="name">Name and surname</label>
-                    <input class="basicInfoInput" type="text" name="fullName" id="name" required>
+                    <label class="required" for="name">Name and surname</label>
+                    <input class="basicInfoInput" type="text" name="fullName" id="name" placeholder=" " required>
+                    <h5 class="warningMsg">this field is required</h5>
                 </div>
 
                 <div class="emailField">
-                    <label for="email">Email</label>
+                    <label class="required" for="email">Email</label>
                     <input class="basicInfoInput" type="email" name="email" id="email" placeholder="example@mail.com" required>
+                    <h5 class="warningMsg">this field is required</h5>
                 </div>
 
                 <div class="passwordField">
-                    <label for="password">Password</label>
+                    <label class="required" for="password">Password</label>
                     <input class="basicInfoInput" type="password" name="password" id="password" placeholder="****" minlength="4" required>
+                    <h5 class="warningMsg">this field is required</h5>
                 </div>
 
                 <div class="ageField">
                     <legend>Age</legend>
-                    <label for="under18"><input type="radio" name="under18" id="under18"> Under 18</label>
-                    <label class="basicInfoInput" for="over18"><input type="radio" name="over18" id="over18"> 18 and over</label>
+                    <label for="under18"><input type="radio" name="age" id="under18"> Under 18</label>
+                    <label class="basicInfoInput" for="over18"><input type="radio" name="age" id="over18"> 18 and over</label>
                 </div>
             </div>
         </section>
 
         <section class="bottom">
-            <h3>Tell us about yourself</h3>
+            <h2>Tell us about yourself</h2>
             <div class="bioField">
                 <label for="bio">Your biography</label><br>
                 <textarea name="bio" id="bio" rows="6"></textarea>
