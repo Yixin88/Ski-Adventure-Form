@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "Avenir";
+    src: url("fonts/AvenirLTStd-Book.otf");
+}
+
+html, body {
+    height:100%;
+} 
+
+body {
+    font-family: "Avenir";
+    display: grid;
+    grid-template-columns: 7fr 4fr;
+    margin: 0;
+}
+
+select {
+    color: #979797;
+    font-family: "Avenir";
+    flex: 1;
+    outline: none;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.leftPage {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px 50px;
+}
+
+.basicInfoField {
+    display: grid;
+    grid-template-areas: "name name"
+                         "email password "
+                         "age age";
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.basicInfoInput, select {
+    height: 35px;
+}
+
+.top h3 {
+    margin-bottom: 30px;
+}
+
+.fullnameField {
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.emailField {
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+}
+
+.passwordField {
+    grid-area: password;
+    display: flex;
+    flex-direction: column;
+}
+
+.ageField {
+    grid-area: age;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+textarea {
+    width: calc(100% - 11px); 
+    max-width: 100%;
+    padding-right: 0;
+    margin: 0;
+    padding-left: 10px;
+    background-color: #E2E5ED;
+    border: 1px solid #E2E5ED;
+    border-radius: 8px;
+    font-family: "Avenir";
+    margin-top: 5px;
+}
+
+input, select{
+    background-color: #E2E5ED;
+    border: 1px solid #E2E5ED;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+input::-webkit-input-placeholder {
+    font-family: "Avenir";
+}
+
+.locationField {
+    display: flex;
+    flex-direction: column;
+}
+
+.selectWrap {
+    display: flex;
+    border-right: 10px solid #E2E5ED;
+    background-color: #E2E5ED;
+    border-radius: 8px;
+}
+
+.equipField {
+    border: none;
+    padding: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.equipField h4{
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.buttons input {
+    flex: 1;
+    height: 35px;
+}
+
+#submitButton {
+    background-color: #149770;
+    color: #FFFFFF;
+    font-family: "Avenir";
+    font-size: 18px;
+}
+
+#resetButton {
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    font-family: "Avenir";
+    font-size: 18px;
+}
+
+.rightPage {
+    display: flex;
+    justify-content: center;
+    background-image: url(./image/ski.jpg);
+    background-position: center;
+    background-size: auto 100%;
+    height: auto;
+    position: relative;
+    
+}
+
+.rightPage h1{
+    position: absolute;
+    top: 15%;
+    color: #FFFFFF;
+    padding: 0 20px;
+    text-shadow: 1px 1px 0px #716e6e;
+}

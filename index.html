@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The ultimate ski adventure</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <form action="" method="get" class="leftPage">
+        <h1>Register for the ultimate ski adventure</h1>
+        <section class="top">
+            <h3>Your basic info</h3>
+            <div class="basicInfoField">
+                <div class="fullnameField">
+                    <label for="name">Name and surname</label>
+                    <input class="basicInfoInput" type="text" name="fullName" id="name" required>
+                </div>
+
+                <div class="emailField">
+                    <label for="email">Email</label>
+                    <input class="basicInfoInput" type="email" name="email" id="email" placeholder="example@mail.com" required>
+                </div>
+
+                <div class="passwordField">
+                    <label for="password">Password</label>
+                    <input class="basicInfoInput" type="password" name="password" id="password" placeholder="****" required>
+                </div>
+
+                <div class="ageField">
+                    <legend>Age</legend>
+                    <label for="under18"><input type="radio" name="under18" id="under18"> Under 18</label>
+                    <label class="basicInfoInput" for="over18"><input type="radio" name="over18" id="over18"> 18 and over</label>
+                </div>
+            </div>
+        </section>
+
+        <section class="bottom">
+            <h3>Tell us about yourself</h3>
+            <div class="bioField">
+                <label for="bio">Your biography</label><br>
+                <textarea name="bio" id="bio" rows="6"></textarea>
+            </div>
+            
+            <div class="locationField">
+                <label for="location">Select location</label>
+                <div class="selectWrap">
+                    <select name="location" id="location">
+                        <option value="mayrhofen" selected>Mayrhofen</option>
+                        <option value="valThorens">Val Thorens</option>
+                        <option value="lesArcs">Les Arcs</option>
+                        <option value="tignes">Tignes</option>
+                    </select>
+                </div>
+            </div>
+
+            <fieldset class="equipField">
+                <h4>What equipment would you like to rent?</h4>
+                <label><input type="checkbox" name="skis"> Skis</label>
+                <label><input type="checkbox" name="skis"> Helmet</label>
+                <label><input type="checkbox" name="skis"> Goggles</label>
+                <label><input type="checkbox" name="skis"> Ski boots</label>
+                <label><input type="checkbox" name="skis"> Ski poles</label>
+            </fieldset>
+
+            <div class="buttons">
+                <input type="reset" value="Reset" id="resetButton">
+                <input type="submit" id="submitButton" value="Submit">
+            </div>
+        </section>
+    </form>
+
+    <div class="rightPage">
+        <h1 class="rightPageText">Epic experience in the snow</h1>
+    </div>
+</body>
+</html>
