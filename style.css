@@ -131,7 +131,11 @@ input[type = "text"]:not(:placeholder-shown):valid {
     border-color: hsl(120, 76%, 50%);
 }
 
-input:placeholder-shown + h5 {
+input:placeholder-shown + .warningMsg {
+    color: red;
+}
+
+input:placeholder-shown + .showRequired {
     color: red;
     visibility: visible;
 }

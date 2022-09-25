@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The ultimate ski adventure</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    
 </head>
 <body>
     <form action="" method="get" class="leftPage">
@@ -22,13 +23,13 @@
                 <div class="emailField">
                     <label class="required" for="email">Email</label>
                     <input class="basicInfoInput" type="email" name="email" id="email" placeholder="example@mail.com" required>
-                    <h5 class="warningMsg">this field is required</h5>
+                    <h5 class="warningMsg1">this field is required</h5>
                 </div>
 
                 <div class="passwordField">
                     <label class="required" for="password">Password</label>
                     <input class="basicInfoInput" type="password" name="password" id="password" placeholder="****" minlength="4" required>
-                    <h5 class="warningMsg">this field is required</h5>
+                    <h5 class="warningMsg2">this field is required</h5>
                 </div>
 
                 <div class="ageField">
@@ -70,6 +71,7 @@
             <div class="buttons">
                 <input type="reset" value="Reset" id="resetButton">
                 <input type="submit" id="submitButton" value="Submit">
+                <button id="hello">yo</button>
             </div>
         </section>
     </form>
@@ -77,5 +79,13 @@
     <div class="rightPage">
         <h1 class="rightPageText">Epic experience in the snow</h1>
     </div>
+
+    <script defer>
+        document.querySelector("#submitButton").addEventListener("click", () => {
+            document.querySelector('.warningMsg').className= 'showRequired';
+            document.querySelector('.warningMsg1').className= 'showRequired';
+            document.querySelector('.warningMsg2').className= 'showRequired';
+        });
+    </script>
 </body>
 </html>
